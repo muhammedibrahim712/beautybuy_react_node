@@ -1,0 +1,11 @@
+*.pyc
+*.svn
+*.svn-base
+*.so
+*.back
+.DS_Store
+bin/lib
+src/bundle.js
+src/bundle.css
+www/index.html
+www/sw.js

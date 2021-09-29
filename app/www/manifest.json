@@ -1,0 +1,23 @@
+{
+  "name": "BeautyBuy™",
+  "short_name": "BeautyBuy™",
+  "description": "BeautyBuy™ is an automatic purchase machine for cosmetics and skin care products.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "White",
+  "background_color": "White",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./images/logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

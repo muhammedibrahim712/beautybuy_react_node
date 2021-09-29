@@ -1,0 +1,324 @@
+/**
+ * Default application CSS theme.
+ *
+ * Please put here only colors and background images.
+ * @see https://en.wikipedia.org/wiki/Web_colors
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/background
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/color
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
+ *
+ * @see https://google.github.io/styleguide/htmlcssguide.html
+ * @see https://github.com/google/closure-stylesheets
+ */
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans - 300';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v23-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v23-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v23-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v23-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v23-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v23-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v23-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans - 600';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v23-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v23-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v23-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v23-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v23-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v23-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* lora-regular - latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lora-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/lora-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lora-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lora-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lora-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lora-v17-latin-regular.svg#Lora') format('svg'); /* Legacy iOS */
+}
+
+body,
+nav ul,
+nav a,
+.has-discount-true .discount span,
+.times:before {
+  color: #000;
+  background: #fff;
+}
+
+a {
+  color: #4cadcd;
+}
+
+header {
+  background: white;
+}
+
+header section {
+  background: no-repeat 1em 1em/14em #fff url('../images/logo.png');
+}
+
+.hero {
+  background: no-repeat center/cover #fff url('../images/bg-1920x1080-min.png');
+  color: #fff;
+}
+
+select {
+  background: no-repeat 98% 50% url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4.95 10%27%3E%3Cpolygon fill=%27Gainsboro%27 points=%271.41 4.67 2.48 3.18 3.54 4.67 1.41 4.67%27/%3E%3Cpolygon fill=%27Gainsboro%27 points=%273.54 5.33 2.48 6.82 1.41 5.33 3.54 5.33%27/%3E%3C/svg%3E");
+}
+
+footer,
+.btn-filter {
+  border-top: solid 1px Gainsboro;
+  background: WhiteSmoke;
+}
+
+nav .menu a.active,
+nav .menu a:active,
+nav .menu a:hover,
+.times:hover:before,
+.sub-header,
+.btn-primary,
+.btn-secondary,
+button {
+  background-color: #444;
+  color: #fff;
+}
+
+.sub-header,
+.btn-primary {
+  background-color: DarkBlue;
+}
+
+.btn-secondary {
+  background-color: DarkOrange;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #4cadcd;
+}
+
+.nav-link-my-list {
+  color: DarkOrange;
+}
+
+.nav-link-my-list:hover {
+  color: SandyBrown;
+}
+
+.btn-join,
+.btn-primary {
+  background-color: #4cadcd;
+  color: white;
+}
+
+.btn-join:hover,
+.btn-primary:hover {
+  background-color: #1b88ac;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: solid 1px #4cadcd;
+  color: #4cadcd;
+}
+
+.vertical-line {
+  border-left: 1px solid #000;
+  height: 18px;
+  align-self: center;
+  margin: 0 1em;
+}
+
+.btn {
+  background: #fff;
+  border-radius: 50px;
+  color: #fa6400;
+}
+
+nav .hamburger span,
+nav .hamburger span::before,
+nav .hamburger span::after {
+  background-color: #000;
+}
+
+input,
+button,
+textarea,
+select {
+  border: solid 1px Gainsboro;
+  border-radius: 3px;
+}
+
+input,
+textarea {
+  background: transparent;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+button:focus,
+button:hover,
+textarea:focus,
+textarea:hover {
+  border-color: Gainsboro;
+}
+
+.error {
+  border: solid 1px OrangeRed;
+}
+
+.btn-filter,
+.note,
+aside h4 {
+  color: #222;
+}
+
+aside label,
+.disabled,
+[disabled] {
+  color: #262627 !important;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  background: Silver;
+}
+
+th {
+  background: #262627;
+  color: #fff;
+}
+
+/**
+ * Removing input background color for autocomplete.
+ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 99px #fff inset;
+}
+
+.has-discount-true .price {
+  color: DimGray;
+}
+
+.has-discount-true .discount {
+  color: SandyBrown;
+}
+
+.about h3,
+.aside h2,
+#account-details h3 {
+  color: DarkBlue;
+}
+
+.card:hover {
+  border-color: DarkBlue;
+}
+
+.designer {
+  color: #4e4e51;
+}
+
+.card strong a {
+  color: #262627;
+}
+
+hr,
+.times:before {
+  border: 1px solid Gray;
+}
+
+.btn-filter svg {
+  fill: none;
+  stroke: Gray;
+}
+
+tr > #td-first {
+  background-color: #f7f7f9;
+}
+
+.form-control {
+  background: url(../images/search.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: solid 1px black;
+  font-size: 1em;
+  text-indent: 30px;
+}
+
+.overflow > select {
+  border: none;
+  border-radius: 0;
+  font-size: small;
+  text-transform: capitalize;
+  background: no-repeat 93% 50% #e4e4e7 url("../images/vector.svg");
+}
+
+.overflow > select:hover {
+  cursor: pointer;
+}
+
+#filter-section > button {
+  background: black;
+}
+
+#filter-section > button:hover {
+  background: #444;
+}
+
+@media only screen and (min-width: 768px) {
+  tr > #td-first {
+    background-color: #f7f7f9;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    background: no-repeat 2em 2em/13em #fff url('../images/logo.png');
+  }
+}

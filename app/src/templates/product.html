@@ -1,0 +1,36 @@
+<form id="details">
+  <table width="100%" cellpadding="0" cellspacing="50">
+    <tr valign="top">
+      <td width="160" class="image">
+        <img height="160" src="{{ image }}" alt="{{ product_name }}"
+             id="image{{ product_id }}">
+      </td>
+      <td class="specification">
+        <h2>{{ product_name }}</h2>
+        <div class="designer">{{ designer }}</div>
+        <div class="has-discount-{{ has_discount|false }}">
+          Original Price:
+          <span class="price">{{ price_formatted }}</span>
+          <span class="discount">{{ discount_formatted }}</span>
+          <a href="/#/signin/" class="discount">Sign Up to See Member Price</a>
+        </div>
+        <p class="note">
+          (The lowest price in the recent past is {{ lowest_price_formatted }})
+        </p>
+        <div class="buttons">
+          <!-- <a href="javascript:history.back()">Back</a> -->
+          <a href="{{ product_link_url }}" target="{{ product_link_target }}" 
+             class="nav-link btn-secondary"
+             rel="noopener noreferrer">Buy It Now</a>
+          <a href="#/checkout/{{ product_id }}" 
+             class="nav-link btn-primary">Buy It Later ⓘ</a>
+          <div class="note">
+            ⓘ Beauty Buy predicts that you'll get a better discount in the comming future.
+            Use our deal tracker for free!
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div id="chart-container" style="width:500px;max-width:100%;height:200px;margin:3em auto"></div>
+</form>

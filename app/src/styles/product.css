@@ -1,0 +1,62 @@
+.product #details {
+  max-width: 1024px;
+  width: 75%;
+}
+
+.product #details .image {
+  background-color: #f7f7f9;
+  height: 22em;
+  text-align: center;
+  vertical-align: middle;
+  width: 15em;
+}
+
+.product #details .image img {
+  height: 15em;
+}
+
+.product #details h2 {
+  margin-top: 0;
+}
+
+.product #details .designer {
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+
+.product #details .note {
+  font-size: 85%;
+  font-weight: normal;
+}
+
+.product #details .specification {
+  position: relative;
+}
+
+.product #details .buttons {
+  position: absolute;
+  bottom: 0;
+}
+
+.product #details .buttons a {
+  display: block;
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.product #details .buttons a,
+.product #details .buttons button {
+  padding: .75em 1.5em;
+  text-transform: capitalize;
+  width: 200px;
+}
+
+span.discount,
+.is-authenticated a.discount {
+  display: none;
+}
+
+a.discount,
+.is-authenticated span.discount {
+  display: inline-block;
+}

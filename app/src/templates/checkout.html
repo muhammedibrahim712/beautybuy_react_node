@@ -1,0 +1,50 @@
+<form id="checkout" onsubmit="return false">
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+      <td width="120" align="center">
+        <img height="100" src="{{ image }}" alt="{{ product_name }}"
+             id="image{{ product_id }}">
+      </td>
+      <td>
+        <div class="designer">{{ designer }}</div>
+        <h2>{{ product_name }}</h2>
+        <div class="has-discount-{{ has_discount|false }}">
+          Price:
+          <span class="price">{{ price_formatted }}</span>
+          <span class="discount">{{ discount_formatted }}</span>
+        </div>
+        <div>SKU: {{ sku_id }}</div>
+        <p>&nbsp;</p>
+        <p class="note">Notify me when deal becomes available:</p>
+      </td>
+    </tr>
+    <tr><td class="align-right">&nbsp;</td><td>&nbsp;</td></tr>
+    <tr>
+      <td class="align-right">Price drop to:</td>
+      <td><select name="drop">
+          <option>{{ drops.5off }} (5% off)</option>
+          <option>{{ drops.10off }} (10% off)</option>
+          <option>{{ drops.20off }} (20% off)</option>
+          <option>{{ drops.30off }} (30% off)</option>
+          <option>{{ drops.50off }} (50% off)</option>
+          <option>{{ drops.75off }} (75% off)</option>
+      </select></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td class="align-right">Within the coming:</td>
+      <td><select name="term">
+          <option>1 week</option>
+          <option>2 weeks</option>
+          <option>30 days</option>
+          <option>60 days</option>
+          <option>180 days</option>
+      </select></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td class="align-right"><a href="javascript:history.back()">Back</a></td>
+      <td><button type="button" id="btn-action">Confirm</button></td>
+    </tr>
+  </table>
+</form>

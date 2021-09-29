@@ -1,0 +1,5 @@
+/**
+ *
+ */
+
+require('./bff/server.js');

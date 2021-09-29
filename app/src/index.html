@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope 
+      itemtype="http://schema.org/WebApplication" lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>BeautyBuy™</title>
+<link rel="canonical" href="https://beautybuy.herokuapp.com/">
+<meta name="description" content="BeautyBuy is your Best Beauty Assistant. We use machine learning to predict and track promotions for your most suitable beauty products.">
+
+<meta itemprop="name" content="BeautyBuy™">
+<link itemprop="url" href="https://beautybuy.herokuapp.com/">
+<meta itemprop="description" content="BeautyBuy is your Best Beauty Assistant. We use machine learning to predict and track promotions for your most suitable beauty products.">
+<meta itemprop="image" content="https://beautybuy.herokuapp.com/images/bg-1440x960.png">
+
+<meta property="og:title" content="BeautyBuy™">
+<meta property="og:url" content="https://beautybuy.herokuapp.com/">
+<meta property="og:description" content="BeautyBuy is your Best Beauty Assistant. We use machine learning to predict and track promotions for your most suitable beauty products.">
+<meta property="og:image" content="https://beautybuy.herokuapp.com/images/bg-1440x960.png">
+<meta property="og:type" content="website">
+
+<meta name="twitter:title" content="BeautyBuy™">
+<meta name="twitter:url" content="https://beautybuy.herokuapp.com/">
+<meta name="twitter:description" content="BeautyBuy is your Best Beauty Assistant. We use machine learning to predict and track promotions for your most suitable beauty products.">
+<meta name="twitter:image" content="https://beautybuy.herokuapp.com/images/bg-1440x960.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@vpodk">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="White">
+<meta itemprop="dateModified" content="@BUILD_DATE">
+<meta itemprop="version" content="@APP_VERSION">
+<meta itemprop="applicationCategory" content="ShoppingApplication">
+<meta itemprop="operatingSystem" content="Web">
+<link rel="manifest" href="./manifest.json">
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="stylesheet" href="./bundle.css">
+<link rel="preconnect" href="https://www.sephora.com">
+<link rel="preconnect" href="https://www.gstatic.com">
+</head>
+<body>
+<header>
+  <section>
+    <div class="nav-block">
+      <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>
+      <form class="product-search-form" id="product-search-form" 
+            action="./#/search/"
+            onsubmit="location.href=this.action+'?q='+this.q.value;return false">
+        <input name="q" type="search" class="form-control" autocomplete="off" 
+               list="typeahead" 
+               placeholder="Search for a brand or deals" 
+               aria-label="Search for a brand or deals">
+        <div class="nav-block nav-block-menu">
+          <ul class="navbar-nav" style="width: 100%;">
+            <li><a href="/#/search/?q=&skincare=all" class="nav-link">Skincare</a></li>
+            <li><a href="/#/search/?q=&skincare=not" class="nav-link">Makeup</a></li>
+            <li><a href="/#/search/?q=&designers=all" class="nav-link">Brands</a></li>
+            <li><a href="/#/search/?q=&savings=all" class="nav-link">Latest Deal</a></li>
+            <div class="vertical-line"></div>
+            <li><a href="/#/profile/" class="nav-link nav-link-my-list"><img src="images/heart.svg" width="12" alt="My List Icon"> &nbsp; My List</a></li>
+            <li><a href="/#/about/" class="nav-link">About us</a></li>
+          </ul>
+        </div>
+      </form>
+      <ul id="nav-auth" class="navbar-nav">
+        <li><a href="#/signin/" class="nav-link auth-link">&nbsp;</a></li>
+        <li><a href="#/signin/" class="nav-link btn-join auth-profile">&nbsp;</a></li>
+      </ul>
+    </div>
+  </section>
+  <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>
+  <nav id="nav">
+    <input type="checkbox" aria-label="Toggle menu">
+    <div class="hamburger"><span></span></div>
+    <ul class="menu">
+      <li><a href="#/search/">Search</a></li>
+      <li><a href="#/about/">About Us</a></li>
+      <li><a href="#/signin/" class="btn-primary auth-link">&nbsp;</a></li>
+      <li><a href="#/signin/" class="btn-secondary auth-profile">&nbsp;</a></li>
+    </ul>
+  </nav>
+</header>
+<div id="main">
+  <div class="loading">
+    <script>document.currentScript.outerHTML='';</script>
+    <noscript>To use BeautyBuy, please enable JavaScript.</noscript>
+  </div>
+</div>
+<footer>© <script>document.currentScript.outerHTML=(new Date).getFullYear()</script> BeautyBuy™. All Rights Reserved.</footer>
+<script type="text/template" id="loading-template">
+  <div class="loading">Loading...</div>
+</script>
+<!-- @HTML_TEMPLATES -->
+<script type="module" src="./bundle.js"></script>
+</body>
+</html>

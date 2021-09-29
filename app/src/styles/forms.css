@@ -1,0 +1,94 @@
+input,
+button,
+select,
+textarea,
+.btn-filter {
+  border-radius: 3px;
+  font-size: 1em;
+  outline: none;
+  padding: 0.75em;
+}
+
+/* input,
+button,
+select {
+  height: 2.75em;
+} */
+
+textarea {
+  height: 6.68em;
+  resize: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input[type='text'],
+input[type='search'],
+select,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button {
+  min-width: 7em;
+  text-transform: uppercase;
+}
+
+input:invalid,
+select:invalid {
+  box-shadow: none;
+}
+
+.search-container button {
+  /* Fixes iOS form submit issue.  */
+  position: absolute;
+  visibility: hidden;
+}
+
+input[type='search'] {
+  /* Fixes unstyleable input on Safari. */
+  -webkit-appearance: textfield;
+}
+
+#btn-save {
+  cursor: pointer;
+  line-height: 0;
+  margin-left: 5px;
+  padding: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  #search-form {
+    margin: 0 auto;
+  }
+
+  .search-container {
+    display: flex;
+    height: 2.75em;
+    margin: 1em auto 0;
+  }
+
+  .search-container button {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    position: static;
+    text-transform: capitalize;
+    visibility: visible;
+    width: 20%;
+  }
+
+  input[type='search'] {
+    width: 100% !important;
+  }
+}

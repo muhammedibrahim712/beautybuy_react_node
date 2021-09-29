@@ -1,0 +1,148 @@
+.cards {
+  /* justify-content: space-between; */
+  margin: 4em 0 1em;
+  padding: 1em;
+  position: relative;
+}
+
+.cards::before {
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: absolute;
+  top: -2em;
+}
+
+.card {
+  margin-bottom: 2%;
+}
+
+.cards .card td {
+  display: block;
+  font-size: 95%;
+  text-align: left;
+  width: auto;
+}
+
+.rows .card td {
+  display: table-cell;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+.rows .card td:first-child {
+  width: 100px;
+}
+
+.rows .card .img {
+  width: 6em;
+}
+
+.card .designer,
+.card strong {
+  display: block;
+  line-height: 1.5em;
+  max-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.card strong {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 111%;
+  margin-bottom: 0.2em;
+  max-height: 3em;
+}
+
+.card strong a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.card .designer {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.has-discount-false,
+.has-discount-true {
+  margin-bottom: 0.25em;
+}
+
+.has-discount-true .price {
+  text-decoration: line-through;
+}
+
+.has-discount-true .discount {
+  font-weight: 900;
+  padding: 0 0.5em;
+}
+
+.has-discount-true .discount span {
+  font-weight: 300;
+}
+
+.has-discount-false .discount,
+.has-discount-true .price span,
+#search-results .card {
+  display: none;
+}
+
+.product-card {
+  width: 100%;
+  border: none;
+}
+
+.product-card > a {
+  text-decoration: none;
+}
+
+.search tr > #td-first {
+  padding: 3em;
+}
+
+.search .product-name {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    padding: 0 0.5em;
+    width: 32%;
+  }
+
+  .rows .card {
+    width: 100%;
+  }
+
+  .product-card {
+    width: 25%;
+    border: none;
+  }
+
+  .product-card > td {
+    display: block;
+    font-size: 95%;
+    text-align: left;
+    width: auto;
+  }
+
+  .search tr > #td-first {
+    padding: 5em 1em;
+  }
+
+  #saved-products > div > table > tbody > tr > #td-first {
+    padding: 0.5em;
+  }
+
+  .cards::before {
+    left: 0.7em;
+  }
+}

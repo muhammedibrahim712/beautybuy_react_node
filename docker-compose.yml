@@ -1,0 +1,50 @@
+version: "3.5"
+
+services:
+  beautybuy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: shizunge/beautybuy:dev
+    container_name: beautybuy
+    restart: always
+    # user: ${UID}:${GID}
+    # command:
+    # privileged: false
+    # depends_on:
+    hostname: beautybuy
+    # network_mode: host
+    networks:
+      - traefik
+    # ports:
+    # expose:
+    # dns:
+    #   - ${NETWORK_DNS_IP}
+    env_file:
+      - ./env-global.env
+    # environment:
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik_network
+      - traefik.http.routers.beautybuy.entrypoints=websecure
+      - traefik.http.routers.beautybuy.tls.certresolver=letsencrypt
+      - traefik.http.routers.beautybuy.rule=Host(`btybuy.com`)
+      - traefik.http.routers.beautybuy.service=beautybuy-service
+      - traefik.http.services.beautybuy-service.loadbalancer.server.port=4000
+      - traefik.http.routers.beautybuy.middlewares=compress
+      # redirect www to nonwww
+      - traefik.http.routers.www-to-non-www.entrypoints=websecure
+      - traefik.http.routers.www-to-non-www.tls.certresolver=letsencrypt
+      - traefik.http.routers.www-to-non-www.rule=Host(`www.btybuy.com`)
+      - traefik.http.routers.www-to-non-www.service=noop@internal
+      - traefik.http.routers.www-to-non-www.middlewares=www-redirectregex
+      - traefik.http.middlewares.www-redirectregex.redirectregex.regex=^https://www.btybuy.com(.*)
+      - traefik.http.middlewares.www-redirectregex.redirectregex.replacement=https://btybuy.com$${1}
+ 
+networks:
+  traefik:
+    external:
+      name: traefik_network
+

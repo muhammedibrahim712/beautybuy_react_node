@@ -1,0 +1,115 @@
+aside h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+aside label {
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+aside input[type='checkbox'] {
+  margin-right: 1em;
+  width: 7%;
+}
+
+aside h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 1.5em 0 0.5em;
+}
+
+aside .loading {
+  margin: 1.25em 0 2.5em;
+}
+
+aside .btn-primary {
+  float: right;
+  margin: 2em -1em 0 0;
+}
+
+.overflow {
+  max-height: 20em;
+  overflow-y: scroll;
+}
+
+.overflow::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.5em;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  border-radius: 0.25em;
+}
+
+aside .btn-filter {
+  border: 0;
+  float: right;
+  font-size: 200%;
+  margin: 0.25em -0.1em 0 0;
+  padding: 0;
+}
+
+aside h4 {
+  display: flex;
+  align-items: center;
+}
+
+aside h4 a {
+  cursor: pointer;
+  font-size: smaller;
+  margin-left: 1em;
+}
+
+aside #filter-section label {
+  text-transform: uppercase;
+}
+
+#filter-section {
+  width: 16.66%;
+  height: 100%;
+}
+
+#filter-content {
+  margin-top: 1em;
+}
+
+#filter-content a {
+  text-decoration: none;
+}
+
+#filter-content {
+  margin-top: 3em;
+}
+
+#filter-section > button {
+  border-radius: 0;
+  cursor: pointer;
+  font-size: small;
+  font-weight: bold;
+  padding: 0.8em;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  aside .btn-primary {
+    margin: 1em 0.5em 0 0;
+  }
+  aside h4 {
+    justify-content: space-between;
+  }
+  aside {
+    align-items: flex-end !important;
+    display: flex;
+    margin: 3em 0em 1.5em 0em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+}

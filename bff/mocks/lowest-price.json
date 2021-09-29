@@ -1,0 +1,19 @@
+{
+  "count": 1,
+  "rows": [
+    {
+      "product_id": 61846,
+      "original_price": 38.7,
+      "current_discount_price": 29,
+      "current_discount_rate": 0.250646,
+      "updated_at": "2021-03-01T15:34:18.076Z",
+      "vendor": "lookfantastic",
+      "sku_id": "11834230",
+      "url": "https://us.lookfantastic.com/philosophy-purity-made-simple-moisturiser-141ml/11834230.html?variation=11834230",
+      "designer": "philosophy",
+      "product_name": "philosophy Purity Made Simple Moisturiser 141ml",
+      "lowest_price": 29,
+      "best_discount_rate": 0.250646
+    }
+  ]
+}

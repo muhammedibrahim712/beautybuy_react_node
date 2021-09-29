@@ -1,0 +1,10 @@
+{
+  "count": 5,
+  "rows": [
+    {"price":360,"discount_price":252,"product_id":26209,"updated_at":"2020-05-09T22:05:30.000Z","vendor":"neimanmarcus","sku_id":"#401022834055","url":"https://www.neimanmarcus.com/p/azagury-1-7-oz-yellow-crystal-perfume-spray-prod223210853","designer":"AZAGURY","product_name":"1.7 oz. Yellow Crystal Perfume Spray"},
+    {"price":24,"discount_price":12,"product_id":19079,"updated_at":"2020-07-05T23:03:50.000Z","vendor":"sephora","sku_id":"2156834","url":"https://www.sephora.com/product/crystal-creme-shimmer-lip-crayon-P439942?skuId=2156834","designer":"Bite Beauty","product_name":"Crystal Crème Shimmer Lip Crayon 0.06 oz/ 1.8 g Grape Glaze shimmering violet with iridescent pearl"},
+    {"price":24,"discount_price":12,"product_id":19075,"updated_at":"2020-07-05T23:03:50.000Z","vendor":"sephora","sku_id":"2156867","url":"https://www.sephora.com/product/crystal-creme-shimmer-lip-crayon-P439942?skuId=2156867","designer":"Bite Beauty","product_name":"Crystal Crème Shimmer Lip Crayon 0.06 oz/ 1.8 g Sugar Flower shimmering warm rose with gold pearl"},
+    {"price":248,"discount_price":173,"product_id":26686,"updated_at":"2020-06-20T05:03:25.000Z","vendor":"neimanmarcus","sku_id":"#3428437","url":"https://www.neimanmarcus.com/p/tory-burch-miller-rainbow-crystal-flat-thong-sandals-prod228980622","designer":"Tory Burch","product_name":"Miller Rainbow Crystal Flat Thong Sandals"},
+    {"price":195,"discount_price":136.5,"product_id":26474,"updated_at":"2020-05-09T22:11:48.000Z","vendor":"neimanmarcus","sku_id":"#401012470654","url":"https://www.neimanmarcus.com/p/agonist-liquid-crystal-perfume-spray-prod162140034","designer":"Agonist","product_name":"Liquid Crystal Perfume Spray"}
+  ]
+}

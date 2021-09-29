@@ -1,0 +1,72 @@
+<article class="hero">
+  <h1>Revolutionize the way you shop for Beauty.</h1>
+  <p>Sign up for personalized product saving recommendations.</p>
+  <a href="#/signin/" class="nav-link btn-join auth-join" role="button">Sign Up</a>
+</article>
+<div id="search-form">
+  <div id="filter-content">
+    <h1>Recommended for you</h1>
+    <h4 class="auth-join"><a href="#/signin/">Sign Up</a> for more personalized recommendations.</h4>
+    <aside>
+      <a class="btn-filter" role="button">×</a>
+      <div id="filter-section">
+        <label>Skin Concern</label>
+        <div class="overflow">
+          <select form="product-search-form" name="concern" id="concern-filter">
+          </select>
+        </div>
+      </div>
+      <div id="filter-section">
+        <label>Savings</label>
+        <div class="overflow">
+          <select form="product-search-form" name="savings" id="savings-filter">
+          </select>
+        </div>
+      </div>
+      <div id="filter-section">
+        <label>Skincare Products</label>
+        <div class="overflow">
+          <select form="product-search-form" name="skincare" id="skincare-filter">
+          </select>
+        </div>
+      </div>
+      <div id="filter-section">
+        <label>Brand</label>
+        <div class="overflow">
+          <select form="product-search-form" name="designers" id="brand-filter">
+            <option>All brands</option>
+          </select>
+        </div>
+      </div>
+      <div id="filter-section">
+        <label>Price Range</label>
+          <div class="overflow">
+            <select form="product-search-form" name="price_range" id="price_range-filter">
+            </select>
+          </div>
+      </div>
+      <div id="filter-section" class="align-bottom">
+        <button form="product-search-form" type="submit" class="btn-dark">Apply</button>
+      </div>
+    </aside>
+  </div>
+  
+  <div class="search-container" style="display: none;"> 
+    <input type="search" name="q" list="typeahead" autocomplete="off"
+           placeholder="Search your product"
+           aria-label="Search your product">
+    <button type="submit" class="btn-primary">Search</button>
+    <a class="btn-filter" role="button">
+      <svg height="24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+      </svg>
+      Refine Search
+    </a>
+  </div>
+
+  <datalist id="typeahead"></datalist>
+  <div id="search-results" class="flex-wrap cards"></div>
+  <div id="popular-products" class="flex-wrap cards"></div>
+  <div id="best-deals" class="flex-wrap cards"></div>
+  <div id="top-brands" class="flex-wrap cards"></div>
+</div>

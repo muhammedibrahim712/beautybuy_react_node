@@ -1,0 +1,129 @@
+<form id="details">
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+      <td width="120" align="left">
+        <img height="100" src="{{ photoURL }}" alt="{{ displayName }}"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+             id="image{{ uid }}">
+        <svg height="100" style="display:none" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M41.2452,33.0349a16,16,0,1,0-18.49,0A26.0412,26.0412,0,0,0,4,58a2,2,0,0,0,2,2H58a2,2,0,0,0,2-2A26.0412,26.0412,0,0,0,41.2452,33.0349ZM20,20A12,12,0,1,1,32,32,12.0137,12.0137,0,0,1,20,20ZM8.09,56A22.0293,22.0293,0,0,1,30,36h4A22.0293,22.0293,0,0,1,55.91,56Z"/>
+        </svg>
+      </td>
+      <td>
+        <h3>{{ displayName }}</h3>
+        <p>&nbsp;</p>
+        <div>{{ email|NA }}</div>
+        <p>&nbsp;</p>
+        <a href="#/signout/">Sign Out</a>
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <hr>
+  <p>&nbsp;</p>
+  <div id="account-details">
+    <h3>Optional Account Details</h3>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td class="align-right">Age group:</td>
+        <td><select name="age">
+            <option value="">Please select your age group</option>
+            <option>Under 20</option>
+            <option>20-25</option>
+            <option>26-30</option>
+            <option>31-35</option>
+            <option>36-40</option>
+            <option>41-45</option>
+            <option>46-50</option>
+            <option>Over 50</option>
+        </select></td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td class="align-right">Beauty budget:</td>
+        <td><select name="budget">
+            <option value="">Please select your approximate annual budget</option>
+            <option>Greater than 10k</option>
+            <option>Between 5k and 10k</option>
+            <option>Between 2k and 5k</option>
+            <option>Between 1k and 2K</option>
+            <option>Less than 1K</option>
+        </select></td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td class="align-right">Skin type:</td>
+        <td><select name="skin-type">
+            <option value="">Please select</option>
+            <option>Normal</option>
+            <option>Oily</option>
+            <option>Dry</option>
+            <option>Combination</option>
+            <option>Sensitive</option>
+            <option>Other</option>
+        </select></td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td class="align-right">Skin concern:</td>
+        <td><select name="skin-concern">
+            <option value="">Please select</option>
+            <option>Acne Prone</option>
+            <option>Anti-Aging</option>
+            <option>Blemish Prone</option>
+            <option>Combination</option>
+            <option>Dark Circle</option>
+            <option>Dry</option>
+            <option>Ingrown Hair</option>
+            <option>Normal</option>
+            <option>Oily</option>
+            <option>Oily and Shinny Skin</option>
+            <option>Pigmentation and Sun Damage</option>
+            <option>Razor Run</option>
+            <option>Redness and Rosacea</option>
+            <option>Sensitive</option>
+            <option>Sun Care</option>
+            <option>Uneven Skin Tone</option>
+        </select></td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td class="align-right">Ethnicity:</td>
+        <td><select name="ethnicity">
+            <option value="">Please select</option>
+            <option>American Indian or Alaska Native</option>
+            <option>Asian</option>
+            <option>Black or African American</option>
+            <option>Native Hawaiian or Other Pacific Islander</option>
+            <option>White</option>
+            <option>Hispanic or Spanish Origin</option>
+            <option>Prefer not to say</option>
+        </select></td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td class="align-right">Purchase frequency:</td>
+        <td><select name="frequency">
+            <option value="">How often do you purchase skin care/cosmetics products</option>
+            <option>Very infrequent</option>
+            <option>Once every six month</option>
+            <option>Once a quarter</option>
+            <option>Once a month</option>
+            <option>Very frequent</option>
+        </select></td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <td colspan="2" align="right">
+          <button class="btn-secondary" type="button" id="btn-purchase">Continue to Purchase</button>
+          <button class="btn-primary" type="button" id="btn-save">Save</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;</p>
+  <hr>
+  <p>&nbsp;</p>
+  <div id="saved-products" class="cards rows">{{ products }}</div>
+</form>

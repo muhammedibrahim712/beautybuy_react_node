@@ -1,0 +1,297 @@
+/**
+ * Common application styles.
+ *
+ * @see https://google.github.io/styleguide/htmlcssguide.html
+ * @see https://github.com/google/closure-stylesheets
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: 'Open Sans', arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+.home .btn {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-text-size-adjust: auto;
+}
+
+#main {
+  margin: 6em auto 0;
+  width: 100%;
+}
+
+header {
+  max-height: 10em;
+  position: fixed;
+  z-index: 999;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+header,
+footer,
+article {
+  padding: 1em;
+}
+
+header h1 {
+  float: left;
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 9em;
+}
+
+header h1 a {
+  display: block;
+  height: 100%;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.sub-header {
+  font-size: 100%;
+  font-weight: 400;
+  margin: 6em auto 0;
+  padding: 1em 3em;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  margin-top: 1em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+#main h2,
+h3 {
+  margin: 0.25em 0 0.5em;
+}
+
+p {
+  font-size: 101%;
+  line-height: 1.5em;
+}
+
+.sub-header,
+.hidden {
+  display: none;
+}
+
+.profile .sub-header,
+.search .sub-header,
+.about .sub-header,
+.product .sub-header,
+.checkout .sub-header,
+.signin .sub-header {
+  display: block;
+}
+
+.loading,
+.error {
+  padding: 0.5em;
+  text-transform: capitalize;
+}
+
+.note {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#saved-products h3,
+#account-details h3 {
+  margin: 1em 0;
+}
+
+td.align-right {
+  padding-right: 1em;
+  text-align: right;
+}
+
+#saved-products .terms {
+  padding-left: 0.75em;
+}
+
+.card .img,
+#saved-products .img {
+  background: no-repeat center/contain;
+  height: 10em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+.product circle,
+.product polyline {
+  transform: translateY(25%);
+}
+
+.times {
+  float: right;
+  margin-top: -2em;
+  position: relative;
+  right: 0.5em;
+  top: 2.5em;
+}
+
+.times:before {
+  border-radius: 50%;
+  content: '×';
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+  height: 25px;
+  justify-content: center;
+  text-align: center;
+  width: 25px;
+}
+
+.btn-filter {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.btn-filter svg {
+  vertical-align: middle;
+}
+
+.btn-show-more {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 8em;
+}
+
+#main > #details,
+#checkout {
+  padding: 1em;
+}
+
+.loading,
+.div-show-more {
+  flex: 0 0 100%;
+}
+
+#filter-content > h1 {
+  font-family: 'Open Sans - 300', arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: .4em;
+}
+
+#filter-content > h4 {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 400;
+}
+
+.nav-link {
+  font-family: 'Open Sans - 600', arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  #main {
+    margin: 8em auto 0;
+    width: 100%;
+  }
+
+  header,
+  footer,
+  article {
+    padding: 1em;
+  }
+
+  header,
+  footer,
+  article,
+  #details,
+  #checkout {
+    margin: 0 auto;
+  }
+
+  header {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  td.align-right {
+    width: 30%;
+  }
+
+  .about article {
+    max-width: 70%;
+  }
+
+  #search-form {
+    width: 100%;
+  }
+
+  .btn-filter {
+    display: none;
+  }
+
+  #popular-products,
+  #best-deals,
+  #top-brands,
+  #search-results {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1270px;
+    padding: 0 0.5em;
+    width: 100%;
+  }
+
+  #popular-products,
+  #search-results,
+  #search-results .loading {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .search-container,
+  section,
+  #filter-content,
+  #header-cover {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1270px;
+    width: 100%;
+  }
+
+  #details,
+  #checkout{
+    width: 50%;
+  }
+
+  .home #main {
+    display: flex;
+  }
+}

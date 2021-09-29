@@ -1,0 +1,11 @@
+#best-deals::before {
+  content: 'Lastest Deals';
+}
+
+#top-brands::before {
+  content: 'Top Brands';
+}
+
+#saved-products::before {
+  content: 'Saved Products';
+}
