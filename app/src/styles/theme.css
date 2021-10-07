@@ -12,6 +12,7 @@
  */
 
 /* open-sans-300 - latin */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 @font-face {
   font-family: 'Open Sans - 300';
   font-style: normal;
@@ -83,11 +84,11 @@ header {
 }
 
 header section {
-  background: no-repeat 1em 1em/14em #fff url('../images/logo.png');
+  background: no-repeat 1em 1em/14em #fff url('https://beautybuy.herokuapp.com/images/logo.png');
 }
 
 .hero {
-  background: no-repeat center/cover #fff url('../images/bg-1920x1080-min.png');
+  background: no-repeat center/cover #fff url('https://beautybuy.herokuapp.com/images/bg-1920x1080-min.png');
   color: #fff;
 }
 
@@ -307,6 +308,10 @@ tr > #td-first {
   background: black;
 }
 
+.title_Recommended{
+  padding: 7em;
+}
+
 #filter-section > button:hover {
   background: #444;
 }
@@ -320,5 +325,63 @@ tr > #td-first {
 @media only screen and (max-width: 768px) {
   header {
     background: no-repeat 2em 2em/13em #fff url('../images/logo.png');
+  }
+}
+/*425*/
+@media screen and (max-width: 540px ) {
+  .hero{
+    /*background: url("./app/www/images/bgmobile.png");*/
+    padding: 1em;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: 83%;
+    background-size: inherit;
+  }
+  .hero h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 153px;
+    width: 265px;
+    font-family: "Open Sans";
+  }
+  .hero p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    width: 14.9em;
+  }
+  .hero a {
+    background: #4CADCD;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 78px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 5px !important;
+    padding: 0em 0em;
+    font-family: "Open Sans";
+  }
+  footer{
+    display: none;
+  }
+}
+@media screen and (max-width: 360px ) {
+.hero h1{
+  padding-top: 100px;
+}
+}
+@media screen and (max-width: 320px ) {
+  .hero h1{
+    padding-top: 70px;
   }
 }

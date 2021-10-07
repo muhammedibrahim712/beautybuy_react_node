@@ -146,3 +146,39 @@
     left: 0.7em;
   }
 }
+@media screen and (max-width: 540px ) {
+  .card .designer{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card strong a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .has-discount-true .price{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+  }
+  .has-discount-true .discount{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cards::before {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .search tr > #td-first {
+    padding: 1em;
+  }
+}

@@ -22,13 +22,156 @@
   padding: 1em 2.5em;
   text-decoration: none;
 }
+.herosearch {
+  background: no-repeat center/cover #fff url(https://beautybuy.herokuapp.com/images/bg-1920x1080-min.png);
+  color: #fff;
+  padding: 7em;
+}
+
+.herosearch h1 {
+  font-family: 'Lora';
+  font-size: 270%;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+.herosearch p {
+  font-size: 120%;
+  margin-bottom: 0.75em;
+}
+
+.herosearch a {
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 1.25em;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Open Sans";
+}
 
 @media only screen and (min-width: 768px) {
+  #filter-content .showmore{
+    display: none;
+  }
   .hero h1 {
-    width: 11em;
+    width: 10em;
   }
 
   .hero p {
     width: 28em;
+  }
+
+  .herosearch h1 {
+    width: 10em;
+  }
+
+  .herosearch p {
+    width: 28em;
+  }
+}
+
+@media screen and (max-width: 540px ) {
+  .herosearch{
+    padding: 1em;
+    padding-top: 35px;
+  }
+  .herosearch h1{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 27px;
+    width: 190px;
+  }
+  .herosearch p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    width: 190px;
+  }
+  .herosearch a {
+    background: #4CADCD;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 78px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 5px !important;
+    padding: 0em 0em;
+    font-family: "Open Sans";
+  }
+
+  /*Filter Section*/
+  #filter-content{
+    margin-left: 1em;
+  }
+  #filter-content h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #filter-content a{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 12px;
+  }
+  #filter-content h4{
+    font-size: 9px;
+
+  }
+  .divRecommended{
+    display: flex;
+  }
+  .showmore{
+    position: absolute;
+    right: 1em;
+  }
+  #popular-products{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #popular-products .product-card:nth-of-type(1n+4) {display: none;}
+  #popular-products .product-card{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    flex: 2 30%;
+    display: flex;
+  }
+  #popular-products .product-image img {
+    max-width: 100%;
+  }
+  #popular-products .product-info {
+    margin-top: auto;
+  }
+  .cards{
+    margin: 0px;
+    padding: 0em;
+}
+
+  /*Best Deal */
+  #best-deals{
+    margin-top: 5em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #top-brands{
+    margin-top: 5em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
   }
 }

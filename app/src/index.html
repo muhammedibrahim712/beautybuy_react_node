@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" itemscope 
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope
       itemtype="http://schema.org/WebApplication" lang="en">
 <head>
+
 <meta charset="utf-8">
 
 <title>BeautyBuy™</title>
@@ -37,18 +38,26 @@
 <link rel="stylesheet" href="./bundle.css">
 <link rel="preconnect" href="https://www.sephora.com">
 <link rel="preconnect" href="https://www.gstatic.com">
+<!--  &lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+<!--  &lt;!&ndash; Optional theme &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+<!--  &lt;!&ndash; Latest compiled and minified JavaScript &ndash;&gt;-->
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 </head>
 <body>
 <header>
   <section>
     <div class="nav-block">
       <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>
-      <form class="product-search-form" id="product-search-form" 
+      <form class="product-search-form" id="product-search-form"
             action="./#/search/"
             onsubmit="location.href=this.action+'?q='+this.q.value;return false">
-        <input name="q" type="search" class="form-control" autocomplete="off" 
-               list="typeahead" 
-               placeholder="Search for a brand or deals" 
+        <input name="q" type="search" class="form-control" autocomplete="off"
+               list="typeahead"
+               placeholder="Search for a brand or deals"
                aria-label="Search for a brand or deals">
         <div class="nav-block nav-block-menu">
           <ul class="navbar-nav" style="width: 100%;">
@@ -57,7 +66,7 @@
             <li><a href="/#/search/?q=&designers=all" class="nav-link">Brands</a></li>
             <li><a href="/#/search/?q=&savings=all" class="nav-link">Latest Deal</a></li>
             <div class="vertical-line"></div>
-            <li><a href="/#/profile/" class="nav-link nav-link-my-list"><img src="images/heart.svg" width="12" alt="My List Icon"> &nbsp; My List</a></li>
+            <li><a href="/#/profile/" class="nav-link nav-link-my-list"><img  src="https://beautybuy.herokuapp.com/images/heart.svg" width="12" alt="My List Icon"/> &nbsp; My List</a></li>
             <li><a href="/#/about/" class="nav-link">About us</a></li>
           </ul>
         </div>
@@ -75,11 +84,50 @@
     <ul class="menu">
       <li><a href="#/search/">Search</a></li>
       <li><a href="#/about/">About Us</a></li>
+      <li><a href="#/about/"></a></li>
       <li><a href="#/signin/" class="btn-primary auth-link">&nbsp;</a></li>
       <li><a href="#/signin/" class="btn-secondary auth-profile">&nbsp;</a></li>
     </ul>
   </nav>
 </header>
+
+
+
+
+<!--<header>-->
+<!--  <section>-->
+<!--    <div class="nav-block">-->
+<!--      <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>-->
+<!--      <form class="product-search-form" id="product-search-form"-->
+<!--            action="./#/search/"-->
+<!--            onsubmit="location.href=this.action+'?q='+this.q.value;return false">-->
+<!--        <div class="nav-block nav-block-menu">-->
+<!--          <ul class="navbar-nav" style="width: 50%;">-->
+
+<!--            <li><a href="/#/about/" class="nav-link">Home</a></li>-->
+<!--            <li><a href="/#/about/" class="nav-link">About us</a></li>-->
+<!--            <li><a href="/#/about/" class="nav-link">Sign in</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--  <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>-->
+<!--  <nav id="nav">-->
+<!--    <input type="checkbox" aria-label="Toggle menu">-->
+<!--    <div class="hamburger"><span></span></div>-->
+<!--    <ul class="menu">-->
+<!--      <li><a href="#/search/">Search</a></li>-->
+<!--      <li><a href="#/about/">About Us</a></li>-->
+<!--      <li><a href="#/about/"></a></li>-->
+<!--      <li><a href="#/signin/" class="btn-primary auth-link">&nbsp;</a></li>-->
+<!--      <li><a href="#/signin/" class="btn-secondary auth-profile">&nbsp;</a></li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--</header>-->
+
+
+
 <div id="main">
   <div class="loading">
     <script>document.currentScript.outerHTML='';</script>

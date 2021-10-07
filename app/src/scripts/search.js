@@ -169,7 +169,7 @@ const initTopBrands_ = () => {
   doGet('top-brands', (event) => {
     const /** string */ text = event.target.responseText;
     const /** !Object */ data = /** @type {!Object} */ (helper.parseJson(text));
-    const /** !Array<!Object> */ rows = data.rows.slice(0, 9);
+    const /** !Array<!Object> */ rows = data.rows.slice(0, 8);
     formatResults_(rows, (content) => {
       container.innerHTML = content;
     });
@@ -347,7 +347,7 @@ const initBestDeals_ = (container) => {
   doGet('best-deals', (event) => {
     const /** string */ text = event.target.responseText;
     const /** !Object */ data = /** @type {!Object} */ (helper.parseJson(text));
-    const /** !Array<!Object> */ rows = data.rows.slice(0, 9);
+    const /** !Array<!Object> */ rows = data.rows.slice(0, 8);
     formatResults_(rows, (content) => {
       container.innerHTML = content;
     });
