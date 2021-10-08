@@ -16,6 +16,9 @@
 }
 
 .hero a {
+  background: white;
+  color: #FB8E45;
+  border-radius: 38px;
   display: inline-block;
   font-weight: 600;
   margin-top: 1.25em;

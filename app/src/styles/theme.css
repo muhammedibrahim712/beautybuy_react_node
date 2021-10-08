@@ -72,7 +72,7 @@ nav a,
 .has-discount-true .discount span,
 .times:before {
   color: #000;
-  background: #fff;
+  /*background: #fff;*/
 }
 
 a {
@@ -314,6 +314,31 @@ tr > #td-first {
 
 #filter-section > button:hover {
   background: #444;
+}
+
+
+/*Header adustment*/
+.home .indexheader{
+  display: none;
+}
+.home .allpages{
+  display: block;
+}
+.profile .indexheader,
+.search .indexheader,
+.about .indexheader,
+.product .indexheader,
+.checkout .indexheader,
+.signin .indexheader {
+  display: block;
+}
+.profile .allpages,
+.search .allpages,
+.about .allpages,
+.product .allpages,
+.checkout .allpages,
+.signin .allpages {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
