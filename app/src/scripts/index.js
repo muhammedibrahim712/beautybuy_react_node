@@ -55,3 +55,71 @@ const render_ = () => {
 };
 
 init();
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  setTimeout(
+    function() {
+      // alert('here');
+      $('#best-deals, #top-brands').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    }, 3000);
+
+}
+setTimeout(function (){
+
+  const labels = [
+    'January',
+    'February',
+    'April',
+    'June',
+  ];
+  const data = {
+    labels: labels,
+    datasets: [{
+      // label: 'My First dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: '#4CADCD',
+      data: [ 10, 20, 8,25],
+    }]
+  };
+  const config = {
+    type: 'line',
+    data: data,
+    options: {
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
+      scales: {
+        y: {
+          suggestedMin: 10,
+          suggestedMax: 30
+        }
+      }
+    }
+  };
+
+  var myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+},5000)

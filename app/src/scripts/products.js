@@ -1,8 +1,9 @@
-import {utils} from 'glize';
+import {dom, utils} from 'glize';
 import {render, parseJson, formatPrice} from './helper.js';
 import {doGet} from './api.js';
 import {getImage} from './images.js';
 import {getUser} from './user.js';
+
 
 /**
  * Gets the product at the specified product ID.
@@ -70,6 +71,7 @@ export const formatProduct = (product) => {
  * @private
  */
 const render_ = (product) => {
+
   getUser((user) => {
     product['lowest_price_formatted'] = user ?
       formatPrice(product['lowest_price']) : '...';
@@ -147,3 +149,19 @@ const getRedirectURL_ = (url) => {
  * @private
  */
 const products_ = {};
+setTimeout(function () {
+  const btn = dom.getElement('test');
+  btn.onclick = (e) => {
+    // e.preventDefault();
+
+    var element = dom.getElement("myModal");
+    element.className += " otherclass";
+
+  }
+  const btns = dom.getElement('close');
+  btns.onclick = () => {
+    var element = dom.getElement("myModal");
+    element.classList.remove("otherclass");
+
+  }
+},5000);

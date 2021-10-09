@@ -76,6 +76,7 @@
 }
 
 @media screen and (max-width: 540px ) {
+
   .herosearch{
     padding: 1em;
     padding-top: 35px;
@@ -127,6 +128,8 @@
     font-weight: 700;
     font-size: 9px;
     line-height: 12px;
+    margin-top: 10px;
+    color: #4CADCD;
   }
   #filter-content h4{
     font-size: 9px;

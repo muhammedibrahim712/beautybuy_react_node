@@ -38,8 +38,14 @@
 <link rel="stylesheet" href="./bundle.css">
 <link rel="preconnect" href="https://www.sephora.com">
 <link rel="preconnect" href="https://www.gstatic.com">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="./slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header class="indexheader">
@@ -67,7 +73,7 @@
       </form>
       <ul id="nav-auth" class="navbar-nav">
         <li><a href="#/signin/" class="nav-link auth-link">&nbsp;</a></li>
-        <li><a href="#/signin/" class="nav-link btn-join auth-profile">&nbsp;</a></li>
+        <li><a href="#/signin/" class="nav-link btn-join auth-profile" >&nbsp;</a></li>
       </ul>
     </div>
   </section>
@@ -77,13 +83,43 @@
 
     <input type="checkbox" aria-label="Toggle menu">
     <div class="hamburger"><span></span></div>
+
+
     <ul class="menu">
-      <li><a href="#/search/">Search</a></li>
-      <li><a href="#/search/">Search</a></li>
-      <li><a href="#/about/">About Us</a></li>
-      <li><a href="#/about/"></a></li>
-      <li><a href="#/signin/" class="btn-primary auth-link">&nbsp;</a></li>
-      <li><a href="#/signin/" class="btn-secondary auth-profile">&nbsp;</a></li>
+      <div class="home-toggle-menu">
+        <li><a  href="#/signin/" class="btn-primary auth-link signin-button">&nbsp;</a></li>
+        <li><a href="#/signin/" class="btn-secondary auth-profile joinnow-button">&nbsp;</a></li>
+      </div>
+      <div class="home-toggle-hurt">
+        <div class="toggle-home-list">
+
+          <a href="/#/search/" class="nav-link"><i class="fa fa-home"></i></a>
+          <a href="/#/profile/" class="nav-link nav-link-my-list"><i class="fa fa-heart"></i></a>
+        </div>
+        <div class="Home-mylist">
+
+          <li> <a  href="#/search/" class="nav-link  Home-mylist-home">Home </a></li>
+          <li> <a href="/#/profile/" class="nav-link nav-link-my-list Home-mylist-list">My List</a></li>
+        </div>
+
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&skincare=all" class="nav-link">Skincare</a></i>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&skincare=not" class="nav-link">Makeup</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&designers=all" class="nav-link">Brands</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&savings=all" class="nav-link">Latest Deal</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+
     </ul>
   </nav>
 </header>
@@ -111,16 +147,15 @@
     <ul class="menu">
       <div class="indexpageli">
       <li><a href="#/search/">Home</a></i>
-      <li class="indexpageliicon"> > </i>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
       </div>
       <div class="indexpageli">
       <li><a href="#/about/">About Us</a></li>
-      <li class="indexpageliicon" > > </i>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
       </div>
       <div class="indexpageli">
       <li><a href="#/signin/">Sign in</a></li>
-        <li class="indexpageliicon"> > </i>
-<!--        <img src="./app/www/images/ChevronRight.png">-->
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
 
       </div>
 
@@ -145,8 +180,12 @@
 </script>
 <!-- @HTML_TEMPLATES -->
 <script type="module" src="./bundle.js"></script>
-<script>
-  console.log('Testing 123');
-</script>
+
+<script type="text/javascript" src="./jquery-1.11.0.min.js"></script>
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<script type="text/javascript" src="./jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>

@@ -103,13 +103,13 @@ aside #filter-section label {
   }
   aside {
     align-items: flex-end !important;
-    display: flex;
+    display: flex !important;
     margin: 3em 0em 1.5em 0em;
   }
 }
 
 @media only screen and (max-width: 768px) {
   aside {
-    display: none;
+    display: none !important;
   }
 }

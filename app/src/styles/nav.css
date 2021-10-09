@@ -207,6 +207,44 @@ nav .menu :active {
   }
 }
 @media screen and (max-width: 540px){
+  .home-toggle-menu{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-toggle-menu .signin-button{
+    visibility: visible;
+    border: 1px solid black;
+    padding: 5px 90px 5px 90px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+  }
+  .home-toggle-menu .joinnow-button{
+    visibility: visible;
+    padding: 5px 90px 5px 90px;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #4CADCD;
+  }
+  .Home-mylist{
+    display: flex;
+  }
+  .Home-mylist .Home-mylist-list{
+    margin-left: 50px;
+  }
+  .toggle-home-list{
+    display: flex;
+    height: 35px;
+  }
+  .toggle-home-list a:nth-child(2){
+    margin-left: 70px;
+    font-size: 25px;
+  }
+  .toggle-home-list a:nth-child(1){
+    margin-left: 10px;
+    font-size: 25px;
+  }
 nav{
   visibility: visible !important;
 }
@@ -218,7 +256,13 @@ nav{
     justify-content: space-between;
   }
   .indexpageliicon{
-    margin-top: 13px;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 25px;
+  }
+  .indexpageliicon i{
+    font-size: 25px;
+    font-weight: 900;
   }
   .logoindexpage{
     background: no-repeat 0.1em 0.1em/8em #fff url('https://beautybuy.herokuapp.com/images/logo.png');
@@ -237,6 +281,44 @@ nav{
   }
 
 }
+@media screen and (max-width: 425px){
+  .home-toggle-menu .signin-button{
+    padding: 5px 60px 5px 60px;
+  }
+  .home-toggle-menu .joinnow-button{
+    padding: 5px 60px 5px 60px;
+  }
+
+}
+@media screen and (max-width: 375px){
+  .home-toggle-menu .signin-button{
+    padding: 5px 45px 5px 45px;
+  }
+  .home-toggle-menu .joinnow-button{
+    padding: 5px 45px 5px 45px;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+  .home-toggle-menu .signin-button{
+    padding: 5px 35px 5px 35px;
+  }
+  .home-toggle-menu .joinnow-button{
+    padding: 5px 35px 5px 35px;
+  }
+
+}
+@media screen and (max-width: 280px){
+  .home-toggle-menu .signin-button{
+    padding: 5px 30px 5px 30px;
+  }
+  .home-toggle-menu .joinnow-button{
+    padding: 5px 30px 5px 30px;
+  }
+
+}
+
 
 
 /*!*toggle*!*/

@@ -1,3 +1,4 @@
+
 <form id="details">
   <table width="100%" cellpadding="0" cellspacing="50">
     <tr valign="top">
@@ -19,18 +20,90 @@
         </p>
         <div class="buttons">
           <!-- <a href="javascript:history.back()">Back</a> -->
-          <a href="{{ product_link_url }}" target="{{ product_link_target }}" 
+          <a target="{{ product_link_target }}"
              class="nav-link btn-secondary"
-             rel="noopener noreferrer">Buy It Now</a>
-          <a href="#/checkout/{{ product_id }}" 
+             id="test"
+             rel="noopener noreferrer" >Buy It Now</a>
+<!--          {{ product_link_url }}-->
+<!--          <a id="test"-->
+<!--             class="nav-link btn-secondary"-->
+<!--             rel="noopener noreferrer" >Buy It test</a>-->
+          <a href="#/checkout/{{ product_id }}"
              class="nav-link btn-primary">Buy It Later ⓘ</a>
           <div class="note">
             ⓘ Beauty Buy predicts that you'll get a better discount in the comming future.
             Use our deal tracker for free!
           </div>
+
         </div>
       </td>
     </tr>
+
   </table>
-  <div id="chart-container" style="width:500px;max-width:100%;height:200px;margin:3em auto"></div>
+<!--  <div id="chart-container" style="width:500px;max-width:100%;height:200px;margin:3em auto"></div>-->
+  <div>
+    <p style="font-weight: 900">Price History: Last 30 Days</p>
+    <canvas id="myChart"></canvas>
+  </div>
+
+
 </form>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close">&times;</span>
+    <div class="pupup-header-img">
+      Sign up to see the lowest price found by Beauty Buy. It’s free!
+    </div>
+  </div>
+
+</div>
+
+<style>
+  /* The Modal (background) */
+  #test{
+    cursor: pointer;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+ .otherclass {
+    display: block !important; /* Hidden by default */
+
+  }
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
