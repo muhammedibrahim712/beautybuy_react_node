@@ -148,10 +148,11 @@ const getRedirectURL_ = (url) => {
  * @type {!Object<string, !Object>}
  * @private
  */
+
 const products_ = {};
 setTimeout(function () {
   const btn = dom.getElement('test');
-  btn.onclick = (e) => {
+  btn.onclick = () => {
     // e.preventDefault();
 
     var element = dom.getElement("myModal");

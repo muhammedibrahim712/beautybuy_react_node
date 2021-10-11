@@ -60,3 +60,62 @@ a.discount,
 .is-authenticated span.discount {
   display: inline-block;
 }
+.model-popup{
+  padding:0px 0px 0px 0px !important;
+  margin-top: 50px !important;
+}
+.pupup-header-img{
+  background-color: yellow;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  padding: 25px 65px 25px 65px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.popup-login{
+  padding: 25px 80px 25px 80px;
+}
+.popup-login input{
+  width: 100% !important;
+}
+.popup-login button{
+
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #4CADCD;
+  color: white;
+
+}
+.modal-content{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.popup-or{
+  text-align: center;
+}
+.popup-or p:before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 5px;
+  background: #191970;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+.popup-or p:after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 5px;
+  background: #191970;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+

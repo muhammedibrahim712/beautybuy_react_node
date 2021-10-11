@@ -51,10 +51,31 @@
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div class="modal-content model-popup">
     <span class="close" id="close">&times;</span>
     <div class="pupup-header-img">
       Sign up to see the lowest price found by Beauty Buy. It’s free!
+    </div>
+    <div>
+      <div id="firebaseui-auth-container" style="margin-top:4em;width: 100%"></div>
+    </div>
+    <div class="popup-or">
+      <p>OR</p>
+    </div>
+    <div>
+<!--      popup-login-->
+      <form class="popup-login">
+        <div class="form-group">
+          <label for="exampleInputEmail1"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1"></label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sighn in</button>
+      </form>
+
     </div>
   </div>
 
@@ -88,7 +109,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 41%;
   }
 
   /* The Close Button */
