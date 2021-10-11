@@ -155,19 +155,23 @@ setTimeout(function () {
   btn.onclick = (e) => {
     e.stopPropagation();
     var modal = dom.getElement("myModal");
-    modal.classList.add("otherclass");
     if(modal.classList.contains("modal")){
       modal.classList.add("otherclass");
     }
-
   }
 },5000);
+
+
 setTimeout(function(){
-  const btns = dom.getElement('main');
+  const btns = dom.getElement('close');
   btns.onclick = (event) => {
     var modal = dom.getElement('myModal');
-    if(modal.classList.contains("otherclass")){
-      modal.classList.remove("otherclass");
-    }
+    modal.classList.remove("otherclass");
+    // if(modal.classList.contains("otherclass")){
+    //   modal.classList.remove("otherclass");
+    // }
+    // if (event.target.matches("main") || !event.target.closest("myModal")) {
+    //   modal.classList.remove("otherclass");
+    // }
   }
 },8000)
