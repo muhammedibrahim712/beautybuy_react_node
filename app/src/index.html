@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" itemscope 
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope
       itemtype="http://schema.org/WebApplication" lang="en">
 <head>
+
 <meta charset="utf-8">
 
 <title>BeautyBuy™</title>
@@ -37,49 +38,135 @@
 <link rel="stylesheet" href="./bundle.css">
 <link rel="preconnect" href="https://www.sephora.com">
 <link rel="preconnect" href="https://www.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header>
+<header class="indexheader">
   <section>
     <div class="nav-block">
       <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>
-      <form class="product-search-form" id="product-search-form" 
+      <form class="product-search-form" id="product-search-form"
             action="./#/search/"
             onsubmit="location.href=this.action+'?q='+this.q.value;return false">
-        <input name="q" type="search" class="form-control" autocomplete="off" 
-               list="typeahead" 
-               placeholder="Search for a brand or deals" 
+        <input name="q" type="search" class="form-control" autocomplete="off"
+               list="typeahead"
+               placeholder="Search for a brand or deals"
                aria-label="Search for a brand or deals">
-        <div class="nav-block nav-block-menu">
+        <div class="nav-block nav-block-menu ">
           <ul class="navbar-nav" style="width: 100%;">
             <li><a href="/#/search/?q=&skincare=all" class="nav-link">Skincare</a></li>
             <li><a href="/#/search/?q=&skincare=not" class="nav-link">Makeup</a></li>
             <li><a href="/#/search/?q=&designers=all" class="nav-link">Brands</a></li>
             <li><a href="/#/search/?q=&savings=all" class="nav-link">Latest Deal</a></li>
             <div class="vertical-line"></div>
-            <li><a href="/#/profile/" class="nav-link nav-link-my-list"><img src="images/heart.svg" width="12" alt="My List Icon"> &nbsp; My List</a></li>
+            <li><a href="/#/profile/" class="nav-link nav-link-my-list"><img  src="https://beautybuy.herokuapp.com/images/heart.svg" width="12" alt="My List Icon"/> &nbsp; My List</a></li>
             <li><a href="/#/about/" class="nav-link">About us</a></li>
           </ul>
         </div>
       </form>
       <ul id="nav-auth" class="navbar-nav">
         <li><a href="#/signin/" class="nav-link auth-link">&nbsp;</a></li>
-        <li><a href="#/signin/" class="nav-link btn-join auth-profile">&nbsp;</a></li>
+        <li><a href="#/signin/" class="nav-link btn-join auth-profile" >&nbsp;</a></li>
       </ul>
     </div>
   </section>
-  <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>
+  <h1><a href="#/search/" title="BeautyBuy Home"  class="logoindexpage" aria-label="BeautyBuy Home">&nbsp;</a></h1>
+  <nav id="nav">
+    <h1><a href="#/search/" title="BeautyBuy Home"  aria-label="BeautyBuy Home">&nbsp;</a></h1>
+
+    <input type="checkbox" aria-label="Toggle menu">
+    <div class="hamburger"><span></span></div>
+
+
+    <ul class="menu">
+      <div class="home-toggle-menu">
+        <li><a  href="#/signin/" class="btn-primary auth-link signin-button">&nbsp;</a></li>
+        <li><a href="#/signin/" class="btn-secondary auth-profile joinnow-button">&nbsp;</a></li>
+      </div>
+      <div class="home-toggle-hurt">
+        <div class="toggle-home-list">
+
+          <a href="/#/search/" class="nav-link"><i class="fa fa-home"></i></a>
+          <a href="/#/profile/" class="nav-link nav-link-my-list"><i class="fa fa-heart"></i></a>
+        </div>
+        <div class="Home-mylist">
+
+          <li> <a  href="#/search/" class="nav-link  Home-mylist-home">Home </a></li>
+          <li> <a href="/#/profile/" class="nav-link nav-link-my-list Home-mylist-list">My List</a></li>
+        </div>
+
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&skincare=all" class="nav-link">Skincare</a></i>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&skincare=not" class="nav-link">Makeup</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&designers=all" class="nav-link">Brands</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
+        <li><a href="/#/search/?q=&savings=all" class="nav-link">Latest Deal</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+
+    </ul>
+  </nav>
+</header>
+
+
+<header class="allpages">
+  <section>
+    <div class="nav-block">
+      <h1><a href="#/search/" title="BeautyBuy Home" aria-label="BeautyBuy Home">&nbsp;</a></h1>
+
+        <div class="nav-block nav-block-menu  only-index-page-header">
+          <ul class="navbar-nav" style="width: 100%;">
+            <li><a href="/#/search/?q=&skincare=all" class="nav-link">Home</a></li>
+            <li><a href="/#/about/?q=&skincare=not" class="nav-link">About Us</a></li>
+            <li><a href="/#/signin/?q=&designers=all" class="nav-link">Sign in</a></li>
+          </ul>
+        </div>
+
+    </div>
+  </section>
+  <h1><a href="#/search/" title="BeautyBuy Home"  class="logoindexpage"aria-label="BeautyBuy Home">&nbsp;</a></h1>
   <nav id="nav">
     <input type="checkbox" aria-label="Toggle menu">
     <div class="hamburger"><span></span></div>
     <ul class="menu">
-      <li><a href="#/search/">Search</a></li>
+      <div class="indexpageli">
+      <li><a href="#/search/">Home</a></i>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
       <li><a href="#/about/">About Us</a></li>
-      <li><a href="#/signin/" class="btn-primary auth-link">&nbsp;</a></li>
-      <li><a href="#/signin/" class="btn-secondary auth-profile">&nbsp;</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+      </div>
+      <div class="indexpageli">
+      <li><a href="#/signin/">Sign in</a></li>
+        <li class="indexpageliicon"><i class="fa fa-angle-right"></i></li>
+
+      </div>
+
     </ul>
   </nav>
 </header>
+
+
+
+
+
+
 <div id="main">
   <div class="loading">
     <script>document.currentScript.outerHTML='';</script>
@@ -92,5 +179,7 @@
 </script>
 <!-- @HTML_TEMPLATES -->
 <script type="module" src="./bundle.js"></script>
+<!--<script type="text/javascript" src="//cdn.jsdelivr.net/npm/chart.js"></script>-->
+
 </body>
 </html>

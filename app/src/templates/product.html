@@ -1,3 +1,4 @@
+
 <form id="details">
   <table width="100%" cellpadding="0" cellspacing="50">
     <tr valign="top">
@@ -17,20 +18,129 @@
         <p class="note">
           (The lowest price in the recent past is {{ lowest_price_formatted }})
         </p>
+
+         <p style="font-weight: bold; margin-top: 25px; ">Color: Black</p>
+          <div class="color-div" >
+            <div class="box-color box-color1"></div>
+            <div class=" box-color box-color2"></div>
+            <div class="box-color box-color3"></div>
+            <div class=" box-color box-color4"></div>
+          </div>
+
         <div class="buttons">
           <!-- <a href="javascript:history.back()">Back</a> -->
-          <a href="{{ product_link_url }}" target="{{ product_link_target }}" 
+          <a target="{{ product_link_target }}"
              class="nav-link btn-secondary"
-             rel="noopener noreferrer">Buy It Now</a>
-          <a href="#/checkout/{{ product_id }}" 
+             id="test"
+             rel="noopener noreferrer" >Buy It Now</a>
+<!--          {{ product_link_url }}-->
+<!--          <a id="test"-->
+<!--             class="nav-link btn-secondary"-->
+<!--             rel="noopener noreferrer" >Buy It test</a>-->
+          <a href="#/checkout/{{ product_id }}"
              class="nav-link btn-primary">Buy It Later ⓘ</a>
           <div class="note">
             ⓘ Beauty Buy predicts that you'll get a better discount in the comming future.
             Use our deal tracker for free!
           </div>
+
         </div>
       </td>
     </tr>
+
   </table>
-  <div id="chart-container" style="width:500px;max-width:100%;height:200px;margin:3em auto"></div>
+<!--  <div id="chart-container" style="width:500px;max-width:100%;height:200px;margin:3em auto"></div>-->
+  <div>
+    <p style="font-weight: 900; margin-top: 60px;">Price History: Last 30 Days</p>
+    <canvas id="myChart"></canvas>
+  </div>
+
+
 </form>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content model-popup">
+    <span class="close" id="close">&times;</span>
+    <div class="pupup-header-img">
+      Sign up to see the lowest price found by Beauty Buy. It’s free!
+    </div>
+    <div style="text-align: center; margin-top: 35px;">
+      <button class="popup-button" data-provider-id="google.com" style="background-color:#ffffff; width: 71%;" data-upgraded=",MaterialButton">
+        <span class="firebaseui-idp-icon-wrapper">
+          <img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+        </span>
+        <span class="firebaseui-idp-text firebaseui-idp-text-long" style="color: black;">Sign in with Google</span>
+<!--        <span class="firebaseui-idp-text firebaseui-idp-text-short">Google</span></button>-->
+<!--      <div id="firebaseui-auth-container" style="margin-top:4em;width: 100%"></div>-->
+    </div>
+    <div class="popup-or">
+      <p>OR</p>
+    </div>
+    <div>
+<!--      popup-login-->
+      <form class="popup-login">
+        <div class="form-group">
+          <label for="exampleInputEmail1"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1"></label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<style>
+  /* The Modal (background) */
+  #test{
+    cursor: pointer;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 99999;
+  }
+ .otherclass {
+    display: block !important; /* Hidden by default */
+
+  }
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 41%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+

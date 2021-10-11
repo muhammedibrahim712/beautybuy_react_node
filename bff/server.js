@@ -127,7 +127,7 @@ app.get(API_BASE + 'firebase', (req, res, next) => {
     storageBucket: process.env.FIREBASE_PROJECT_ID + '.appspot.com',
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
     appId: process.env.FIREBASE_APP_ID,
-    measurementId: 'G-JVWF9L3DWQ'
+    measurementId: 'G-8Z0D5EKX3P'
   });
   res.type('application/json').status(200).send(data.toString('utf8'));
 });

@@ -35,7 +35,7 @@
 
 .product #details .buttons {
   position: absolute;
-  bottom: 0;
+  bottom: -75px;
 }
 
 .product #details .buttons a {
@@ -59,4 +59,116 @@ span.discount,
 a.discount,
 .is-authenticated span.discount {
   display: inline-block;
+}
+.model-popup{
+  padding:0px 0px 0px 0px !important;
+  margin-top: 50px !important;
+}
+.pupup-header-img{
+  /*background: url("../app/www/images/bg2.png");*/
+  background: url("https://beautybuy.herokuapp.com/images/bg-1920x1080-min.png");
+  /*background-color: yellow;*/
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  padding: 25px 65px 25px 65px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-position: -507px 274px;
+  color: white;
+}
+.popup-login{
+  padding: 0px 80px 25px 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.popup-login input{
+  width: 100% !important;
+}
+.popup-login button{
+
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #4CADCD;
+  color: white;
+
+}
+.modal-content{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.popup-or p{
+  /*text-align: center;*/
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-or p:before {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 1px;
+  background: #9E9FA1;
+  /*left: 35.5%;*/
+  /*top: 61.5%;*/
+  /*position: absolute;*/
+}
+.popup-or p:after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 1px;
+  background: #9E9FA1;
+  /*right: 35.5%;*/
+  /*top: 61.5%;*/
+  /*position: absolute;*/
+}
+.popup-button img{
+  width: 25px;
+  margin-right: 5px;
+}
+.model-popup span{
+  color: black;
+}
+.color-div{
+  display: flex;
+}
+.box-color{
+ margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  background: #EF9376;
+  box-shadow: inset -1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.box-color1{
+  background-color: #EF9376;
+}
+.box-color2{
+   background-color: #9A3C06;
+}
+.box-color3{
+    background-color: #D15033;
+}
+.box-color4{
+  background: #601915;
+}
+@media screen and (max-width: 540px) {
+  .popup-login{
+    padding: 5px;
+  }
+  .pupup-header-img{
+    padding: 5px;
+    font-size: 16px;
+  }
+  .popup-or{
+    display: none;
+  }
 }

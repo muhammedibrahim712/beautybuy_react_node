@@ -1,4 +1,4 @@
-<article class="hero">
+<article class="herosearch">
   <h1>Revolutionize the way you shop for Beauty.</h1>
   <p>Sign up for personalized product saving recommendations.</p>
   <a href="#/signin/" class="nav-link btn-join auth-join" role="button">Sign Up</a>
@@ -6,7 +6,11 @@
 <div id="search-form">
   <div id="filter-content">
     <h1>Recommended for you</h1>
-    <h4 class="auth-join"><a href="#/signin/">Sign Up</a> for more personalized recommendations.</h4>
+    <div class="divRecommended">
+      <h4 class="auth-join"><a href="#/signin/">Sign Up</a> for more personalized recommendations.</h4>
+      <a href="#" id="showmoreLatest" class="showmore">Show More</a>
+    </div>
+
     <aside>
       <a class="btn-filter" role="button">×</a>
       <div id="filter-section">
@@ -50,8 +54,8 @@
       </div>
     </aside>
   </div>
-  
-  <div class="search-container" style="display: none;"> 
+
+  <div class="search-container" style="display: none;">
     <input type="search" name="q" list="typeahead" autocomplete="off"
            placeholder="Search your product"
            aria-label="Search your product">
@@ -67,6 +71,10 @@
   <datalist id="typeahead"></datalist>
   <div id="search-results" class="flex-wrap cards"></div>
   <div id="popular-products" class="flex-wrap cards"></div>
+  <div class="search-view-more">
+    <a href="#" class="nav-link btn-join auth-join" role="button">View More</a>
+  </div>
   <div id="best-deals" class="flex-wrap cards"></div>
   <div id="top-brands" class="flex-wrap cards"></div>
 </div>
+

@@ -1,8 +1,9 @@
-import {utils} from 'glize';
+import {dom, utils} from 'glize';
 import {render, parseJson, formatPrice} from './helper.js';
 import {doGet} from './api.js';
 import {getImage} from './images.js';
 import {getUser} from './user.js';
+
 
 /**
  * Gets the product at the specified product ID.
@@ -70,6 +71,7 @@ export const formatProduct = (product) => {
  * @private
  */
 const render_ = (product) => {
+
   getUser((user) => {
     product['lowest_price_formatted'] = user ?
       formatPrice(product['lowest_price']) : '...';
@@ -146,4 +148,30 @@ const getRedirectURL_ = (url) => {
  * @type {!Object<string, !Object>}
  * @private
  */
+
 const products_ = {};
+setTimeout(function () {
+  const btn = dom.getElement('test');
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    var modal = dom.getElement("myModal");
+    if(modal.classList.contains("modal")){
+      modal.classList.add("otherclass");
+    }
+  }
+},5000);
+
+
+setTimeout(function(){
+  const btns = dom.getElement('close');
+  btns.onclick = (event) => {
+    var modal = dom.getElement('myModal');
+    modal.classList.remove("otherclass");
+    // if(modal.classList.contains("otherclass")){
+    //   modal.classList.remove("otherclass");
+    // }
+    // if (event.target.matches("main") || !event.target.closest("myModal")) {
+    //   modal.classList.remove("otherclass");
+    // }
+  }
+},8000)

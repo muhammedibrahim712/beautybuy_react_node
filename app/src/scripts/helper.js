@@ -124,3 +124,5 @@ export const getParameter = (name, url=undefined) => {
 };
 
 export const isMobile = navigator.maxTouchPoints || 'ontouchstart' in document;
+
+
