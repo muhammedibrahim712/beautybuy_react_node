@@ -340,7 +340,10 @@ tr > #td-first {
 .signin .allpages {
   display: none;
 }
-
+.search-view-more{
+  text-align: center;
+  padding: 20px 0px 45px 0px;
+}
 @media only screen and (min-width: 768px) {
   tr > #td-first {
     background-color: #f7f7f9;

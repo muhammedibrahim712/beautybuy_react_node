@@ -18,6 +18,15 @@
         <p class="note">
           (The lowest price in the recent past is {{ lowest_price_formatted }})
         </p>
+
+         <p style="font-weight: bold; margin-top: 25px; ">Color: Black</p>
+          <div class="color-div" >
+            <div class="box-color box-color1"></div>
+            <div class=" box-color box-color2"></div>
+            <div class="box-color box-color3"></div>
+            <div class=" box-color box-color4"></div>
+          </div>
+
         <div class="buttons">
           <!-- <a href="javascript:history.back()">Back</a> -->
           <a target="{{ product_link_target }}"
@@ -42,7 +51,7 @@
   </table>
 <!--  <div id="chart-container" style="width:500px;max-width:100%;height:200px;margin:3em auto"></div>-->
   <div>
-    <p style="font-weight: 900">Price History: Last 30 Days</p>
+    <p style="font-weight: 900; margin-top: 60px;">Price History: Last 30 Days</p>
     <canvas id="myChart"></canvas>
   </div>
 
@@ -52,12 +61,18 @@
 
   <!-- Modal content -->
   <div class="modal-content model-popup">
-    <span class="close" id="close">&times;</span>
+<!--    <span class="close" >&times;</span>-->
     <div class="pupup-header-img">
       Sign up to see the lowest price found by Beauty Buy. It’s free!
     </div>
-    <div>
-      <div id="firebaseui-auth-container" style="margin-top:4em;width: 100%"></div>
+    <div style="text-align: center; margin-top: 35px;">
+      <button class="popup-button" data-provider-id="google.com" style="background-color:#ffffff; width: 71%;" data-upgraded=",MaterialButton">
+        <span class="firebaseui-idp-icon-wrapper">
+          <img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+        </span>
+        <span class="firebaseui-idp-text firebaseui-idp-text-long" style="color: black;">Sign in with Google</span>
+<!--        <span class="firebaseui-idp-text firebaseui-idp-text-short">Google</span></button>-->
+<!--      <div id="firebaseui-auth-container" style="margin-top:4em;width: 100%"></div>-->
     </div>
     <div class="popup-or">
       <p>OR</p>
@@ -73,7 +88,7 @@
           <label for="exampleInputPassword1"></label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <button type="submit" class="btn btn-primary">Sighn in</button>
+        <button type="submit" class="btn btn-primary">Sign in</button>
       </form>
 
     </div>
@@ -90,7 +105,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -98,6 +113,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 99999;
   }
  .otherclass {
     display: block !important; /* Hidden by default */

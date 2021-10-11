@@ -152,17 +152,22 @@ const getRedirectURL_ = (url) => {
 const products_ = {};
 setTimeout(function () {
   const btn = dom.getElement('test');
-  btn.onclick = () => {
-    // e.preventDefault();
-
-    var element = dom.getElement("myModal");
-    element.className += " otherclass";
-
-  }
-  const btns = dom.getElement('close');
-  btns.onclick = () => {
-    var element = dom.getElement("myModal");
-    element.classList.remove("otherclass");
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    var modal = dom.getElement("myModal");
+    modal.classList.add("otherclass");
+    if(modal.classList.contains("modal")){
+      modal.classList.add("otherclass");
+    }
 
   }
 },5000);
+setTimeout(function(){
+  const btns = dom.getElement('main');
+  btns.onclick = (event) => {
+    var modal = dom.getElement('myModal');
+    if(modal.classList.contains("otherclass")){
+      modal.classList.remove("otherclass");
+    }
+  }
+},8000)
