@@ -88,83 +88,89 @@
   </div>
 </div>
 <style>
+  .dots-wrapper{
+    display: none;
+  }
+  @media screen and (max-width: 420px ) {
+    .dots-wrapper{
+      display: block;
+    }
+    #top-brands .card.product-card {
+      margin: 10px;
+      flex: 105px 0 0;
+    }
+    #best-deals .card.product-card {
+      margin: 10px;
+      flex: 105px 0 0;
+    }
+    .dots-wrapper .dot {
+      /* border: none; */
+      background: rgba(0, 0, 0, 0.2);
+      /* width: 20px !important; */
+      height: 15px !important;
+      margin: 5px;
+      border-radius: 50%;
+      outline: none;
+      padding: 0;
+      min-width: 15px !important;
+    }
+    .dots-wrapper .doting {
+      /* border: none; */
+      background: rgba(0, 0, 0, 0.2);
+      /* width: 20px !important; */
+      height: 15px !important;
+      margin: 5px;
+      border-radius: 50%;
+      outline: none;
+      padding: 0;
+      min-width: 15px !important;
+    }
+    #top-brands {
+      display: flex;
+      transition: ease 0.5s;
+    }
+    #best-deals {
+      display: flex;
+      transition: ease 0.5s;
+    }
+    /* Dots */
 
-  #top-brands .card.product-card {
-    margin: 10px;
-    flex: 105px 0 0;
-  }
-  #best-deals .card.product-card {
-    margin: 10px;
-    flex: 105px 0 0;
-  }
-  .dots-wrapper .dot {
-    /* border: none; */
-    background: rgba(0, 0, 0, 0.2);
-    /* width: 20px !important; */
-    height: 15px !important;
-    margin: 5px;
-    border-radius: 50%;
-    outline: none;
-    padding: 0;
-    min-width: 15px !important;
-  }
-  .dots-wrapper .doting {
-    /* border: none; */
-    background: rgba(0, 0, 0, 0.2);
-    /* width: 20px !important; */
-    height: 15px !important;
-    margin: 5px;
-    border-radius: 50%;
-    outline: none;
-    padding: 0;
-    min-width: 15px !important;
-  }
-  #top-brands {
-    display: flex;
-    transition: ease 0.5s;
-  }
-  #best-deals {
-    display: flex;
-    transition: ease 0.5s;
-  }
-  /* Dots */
+    .dots-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
 
-  .dots-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    .dot {
+      border: none;
+      background: rgba(0, 0, 0, 0.2);
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      border-radius: 50%;
+      outline: none;
+    }
+    .dot:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .dot.active {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .doting {
+      border: none;
+      background: rgba(0, 0, 0, 0.2);
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      border-radius: 50%;
+      outline: none;
+    }
+    .doting:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .doting.active {
+      background: rgba(0, 0, 0, 0.5);
+    }
   }
-
-  .dot {
-    border: none;
-    background: rgba(0, 0, 0, 0.2);
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    border-radius: 50%;
-    outline: none;
-  }
-  .dot:hover {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .dot.active {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .doting {
-    border: none;
-    background: rgba(0, 0, 0, 0.2);
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    border-radius: 50%;
-    outline: none;
-  }
-  .doting:hover {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .doting.active {
-    background: rgba(0, 0, 0, 0.5);
-  }
-
 </style>
 
