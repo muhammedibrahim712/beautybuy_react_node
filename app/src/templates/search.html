@@ -75,6 +75,96 @@
     <a href="#" class="nav-link btn-join auth-join" role="button">View More</a>
   </div>
   <div id="best-deals" class="flex-wrap cards"></div>
+  <div class="dots-wrapper">
+    <button class="doting"></button>
+    <button class="doting"></button>
+    <button class="doting"></button>
+  </div>
   <div id="top-brands" class="flex-wrap cards"></div>
+  <div class="dots-wrapper">
+    <button class="dot"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+  </div>
 </div>
+<style>
+
+  #top-brands .card.product-card {
+    margin: 10px;
+    flex: 105px 0 0;
+  }
+  #best-deals .card.product-card {
+    margin: 10px;
+    flex: 105px 0 0;
+  }
+  .dots-wrapper .dot {
+    /* border: none; */
+    background: rgba(0, 0, 0, 0.2);
+    /* width: 20px !important; */
+    height: 15px !important;
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+    padding: 0;
+    min-width: 15px !important;
+  }
+  .dots-wrapper .doting {
+    /* border: none; */
+    background: rgba(0, 0, 0, 0.2);
+    /* width: 20px !important; */
+    height: 15px !important;
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+    padding: 0;
+    min-width: 15px !important;
+  }
+  #top-brands {
+    display: flex;
+    transition: ease 0.5s;
+  }
+  #best-deals {
+    display: flex;
+    transition: ease 0.5s;
+  }
+  /* Dots */
+
+  .dots-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .dot {
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+  }
+  .dot:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .dot.active {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .doting {
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+  }
+  .doting:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .doting.active {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+</style>
 

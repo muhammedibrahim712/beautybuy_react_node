@@ -357,8 +357,12 @@ tr > #td-first {
 }
 /*425*/
 @media screen and (max-width: 540px ) {
+.search-view-more{
+  display: none;
+}
   .search{
     overflow: hidden;
+    height: 1567px;
   }
   .hero{
     /*background: url("./app/www/images/bgmobile.png");*/
