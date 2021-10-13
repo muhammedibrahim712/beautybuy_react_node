@@ -160,8 +160,6 @@ setTimeout(function () {
     }
   }
 },5000);
-
-
 setTimeout(function(){
   const btns = dom.getElement('close');
   btns.onclick = (event) => {

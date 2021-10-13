@@ -1,8 +1,7 @@
-
 <form id="details">
   <table width="100%" cellpadding="0" cellspacing="50">
     <tr valign="top">
-      <td width="160" class="image">
+      <td width="160" class="image single-product-img" >
         <img height="160" src="{{ image }}" alt="{{ product_name }}"
              id="image{{ product_id }}">
       </td>
@@ -18,15 +17,13 @@
         <p class="note">
           (The lowest price in the recent past is {{ lowest_price_formatted }})
         </p>
-
-         <p style="font-weight: bold; margin-top: 25px; ">Color: Black</p>
+         <p class="color-selection-text">Color: Black</p>
           <div class="color-div" >
             <div class="box-color box-color1"></div>
             <div class=" box-color box-color2"></div>
             <div class="box-color box-color3"></div>
             <div class=" box-color box-color4"></div>
           </div>
-
         <div class="buttons">
           <!-- <a href="javascript:history.back()">Back</a> -->
           <a target="{{ product_link_target }}"
@@ -50,15 +47,12 @@
 
   </table>
 <!--  <div id="chart-container" style="width:500px;max-width:100%;height:200px;margin:3em auto"></div>-->
-  <div>
-    <p style="font-weight: 900; margin-top: 60px;">Price History: Last 30 Days</p>
-    <canvas id="myChart"></canvas>
-  </div>
-
-
+<!--  <div>-->
+<!--    <p style="font-weight: 900; margin-top: 60px;">Price History: Last 30 Days</p>-->
+<!--    <canvas id="myChart"></canvas>-->
+<!--  </div>-->
 </form>
 <div id="myModal" class="modal">
-
   <!-- Modal content -->
   <div class="modal-content model-popup">
     <span class="close" id="close">&times;</span>
@@ -71,8 +65,6 @@
           <img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
         </span>
         <span class="firebaseui-idp-text firebaseui-idp-text-long" style="color: black;">Sign in with Google</span>
-<!--        <span class="firebaseui-idp-text firebaseui-idp-text-short">Google</span></button>-->
-<!--      <div id="firebaseui-auth-container" style="margin-top:4em;width: 100%"></div>-->
     </div>
     <div class="popup-or">
       <p>OR</p>
@@ -117,7 +109,6 @@
   }
  .otherclass {
     display: block !important; /* Hidden by default */
-
   }
   /* Modal Content */
   .modal-content {
@@ -127,7 +118,6 @@
     border: 1px solid #888;
     width: 41%;
   }
-
   /* The Close Button */
   .close {
     color: #aaaaaa;
@@ -135,12 +125,16 @@
     font-size: 28px;
     font-weight: bold;
   }
-
   .close:hover,
   .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+  @media screen and (max-width:540px ){
+    .modal-content{
+      width: 85%;
+    }
   }
 </style>
 

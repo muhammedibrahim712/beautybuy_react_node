@@ -34,8 +34,9 @@
 }
 
 .product #details .buttons {
-  position: absolute;
-  bottom: -75px;
+  /*position: absolute;*/
+  /*bottom: -75px;*/
+  margin-top: 20px;
 }
 
 .product #details .buttons a {
@@ -160,6 +161,10 @@ a.discount,
 .box-color4{
   background: #601915;
 }
+.color-selection-text{
+  font-weight: bold;
+  margin-top: 25px;
+}
 @media screen and (max-width: 540px) {
   .popup-login{
     padding: 5px;
@@ -170,5 +175,45 @@ a.discount,
   }
   .popup-or{
     display: none;
+  }
+  .specification{
+    position: absolute !important;
+    /*left: 66px;*/
+    top: 500px;
+    height: 430px;
+    overflow: hidden;
+
+  }
+  .product #details{
+    max-width: 100%;
+    width: 100%;
+  }
+  form#details{
+    padding: 0px !important;
+  }
+  .single-product-img{
+    display: flex;
+    width: 100% !important;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .product #details .image img{
+    margin-top: 50px;
+  }
+  .product footer{
+    margin-top: 500px;
+  }
+  .product #details .designer{
+    margin-bottom: 5px !important;
+  }
+  .color-selection-text{
+    margin-top: 10px;
+  }
+  .product #details .buttons{
+    position: initial;
+    margin-top: 5px;
+  }
+  .product #details h2{
+    font-size: 24px !important;
   }
 }

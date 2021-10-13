@@ -123,7 +123,7 @@
     font-size: 16px;
     line-height: 22px;
   }
-  #filter-content a{
+  #filter-content h4 a{
     font-style: normal;
     font-weight: 700;
     font-size: 9px;
@@ -131,13 +131,20 @@
     margin-top: 10px;
     color: #4CADCD;
   }
+  #filter-content a{
+    margin-top: 10px;
+    color: #4CADCD;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 12px;
+  }
   #filter-content h4{
     font-size: 9px;
 
   }
   .divRecommended{
     display: flex;
-    display: block;
   }
   .showmore{
     position: absolute;
@@ -146,7 +153,7 @@
   #popular-products{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   #popular-products .product-card:nth-of-type(1n+4) {display: none;}
   #popular-products .product-card{

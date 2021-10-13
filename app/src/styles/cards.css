@@ -71,6 +71,7 @@
 .has-discount-false,
 .has-discount-true {
   margin-bottom: 0.25em;
+  display: flex;
 }
 
 .has-discount-true .price {
@@ -90,6 +91,9 @@
 .has-discount-true .price span,
 #search-results .card {
   display: none;
+}
+.discount{
+  display: block !important;
 }
 
 .product-card {
