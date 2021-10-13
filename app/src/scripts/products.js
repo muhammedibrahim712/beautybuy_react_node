@@ -53,9 +53,9 @@ export const renderProduct = () => {
  */
 export const formatProduct = (product) => {
   const /** number */ price = product['price'] ||
-                              product['original_price'] || 0;
+    product['original_price'] || 0;
   const /** number */ discount = product['discount_price'] ||
-                                 product['current_discount_price'] || 0;
+    product['current_discount_price'] || 0;
   product['price_formatted'] = formatPrice(price);
   product['discount_formatted'] = formatPrice(discount || price);
   product['has_discount'] = !!(discount);
@@ -159,7 +159,7 @@ setTimeout(function () {
       modal.classList.add("otherclass");
     }
   }
-},5000);
+},10000);
 setTimeout(function(){
   const btns = dom.getElement('close');
   btns.onclick = (event) => {
@@ -172,4 +172,4 @@ setTimeout(function(){
     //   modal.classList.remove("otherclass");
     // }
   }
-},8000)
+},10000);
