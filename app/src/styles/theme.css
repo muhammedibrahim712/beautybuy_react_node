@@ -12,7 +12,6 @@
  */
 
 /* open-sans-300 - latin */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 @font-face {
   font-family: 'Open Sans - 300';
   font-style: normal;
@@ -360,10 +359,10 @@ tr > #td-first {
 .search-view-more{
   display: none;
 }
-  .search{
-    overflow: hidden;
-    height: 1567px;
-  }
+  /*.search{*/
+  /*  overflow: hidden;*/
+  /*  height: 1567px;*/
+  /*} */
   .hero{
     /*background: url("./app/www/images/bgmobile.png");*/
     padding: 1em;
@@ -407,7 +406,7 @@ tr > #td-first {
     font-family: "Open Sans";
     color: white;
   }
-  footer{
+  .home footer{
     display: none;
   }
 }

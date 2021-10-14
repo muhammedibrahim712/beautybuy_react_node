@@ -151,17 +151,24 @@ const getRedirectURL_ = (url) => {
 
 const products_ = {};
 setTimeout(function () {
-  const btn = dom.getElement('test');
+  const btn = dom.getElement('signin-poup');
+  if (btn == null){
+    return false
+  }else {
   btn.onclick = (e) => {
     e.stopPropagation();
     var modal = dom.getElement("myModal");
     if(modal.classList.contains("modal")){
       modal.classList.add("otherclass");
     }
-  }
+  }}
 },10000);
 setTimeout(function(){
   const btns = dom.getElement('close');
+  if(btns==null){
+    return false;
+  }
+  else{
   btns.onclick = (event) => {
     var modal = dom.getElement('myModal');
     modal.classList.remove("otherclass");
@@ -171,5 +178,5 @@ setTimeout(function(){
     // if (event.target.matches("main") || !event.target.closest("myModal")) {
     //   modal.classList.remove("otherclass");
     // }
-  }
+  }}
 },10000);
